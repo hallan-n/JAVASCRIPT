@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em JS.</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: royalblue;            
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        input{
+            display: flex;
+            margin: auto;
+        }
+        div{
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="Somar()">
+    <div id="res">Resultado...</div>
+    
+    <script>
+        function Somar(){
+        var number1 = window.document.getElementById('txtn1')
+        var number2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+        var parse1 = Number(number1.value)
+        var parse2 = Number(number2.value)
+        var s = parse1 + parse2
+        res.innerHTML = `A somar entre ${parse1} e ${parse2} é ${s}`
+    }
+    </script>
+</body>
+</html>
