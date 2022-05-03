@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENTRAN</title>
+    <style>
+        p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Digita a sua velocidade:</p>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="pode">Resultado</div>
+    <script>
+        function verificar(){
+            var pode = window.document.getElementById('pode')
+            var velocidade = window.document.getElementById('txtvel')
+            var velocidadep = Number(velocidade.value)
+            if(velocidadep > 60){
+                pode.innerHTML = "Multado vagabundo safado"
+            }else{
+                pode.innerHTML = "Pode passar flor do dia"
+            }
+        }
+    </script>
+
+</body>
+</html>
