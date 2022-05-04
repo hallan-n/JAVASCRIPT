@@ -1,5 +1,5 @@
-var idade = 90
-/*if(idade < 16){
+/*var idade = 90
+if(idade < 16){
     console.log('Não vota')
 }else{
     if(idade == 16 || idade == 17){
@@ -15,7 +15,7 @@ if(idade < 16){
     console.log('Voto opcional')
 }else{
     console.log('vota')
-}*/
+}
 
 var agora = new Date()
 var hora = agora.getHours()
@@ -26,3 +26,4 @@ if(hora < 12){
 }else{
     console.log('Boa noite')
 }
+*/
