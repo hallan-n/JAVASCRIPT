@@ -16,6 +16,6 @@ for(var piroca = 0 in pica){
 
 let valores = [1,2,3]
 for(var controle = 0;controle < valores.length; controle++){
-    console.log(valores[controle])
+    console.log(`O número ${controle} representar o valor ${valores[controle]} dentro de array`)
 
 }
