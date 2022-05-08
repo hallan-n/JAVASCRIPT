@@ -4,7 +4,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
-    padding: 40px;
+    padding: 10px;
     background-color: blueviolet;
 }
 header > h1{
@@ -24,11 +24,15 @@ section{
     max-height: 700px;
     border-radius: 40px;
 }
+#res{
+    text-align: center;
+}
 section > div{
     width: 80%;
 }
 #cont{
     padding: 30px;
+    text-align: center;
 }
 #imagem{
     padding: 20px;
@@ -39,4 +43,20 @@ footer{
     font-size: 20px;
     padding: 20px;
     text-align: center;
+}
+.negoney{
+    margin: auto;
+    text-align: center;
+}
+.branconey{
+    text-align: center;
+    margin: auto;
+}
+@media(max-width: 350px){
+    .negoney{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
