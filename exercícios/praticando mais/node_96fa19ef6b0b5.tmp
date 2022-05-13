@@ -1,0 +1,11 @@
+
+numprimos(30)
+function numprimos(entrada){
+    for(controle = 2; controle <= entrada; controle ++){
+        for(controle2= 2; controle2 < controle, controle2++;){
+            if(controle % controle2 === 0){
+                console.log(controle2)
+            }
+        }
+    }
+}
